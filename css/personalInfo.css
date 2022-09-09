@@ -1,0 +1,70 @@
+/*
+personalInfo.css
+*/
+
+html,
+body {
+    font-family: OpenSans;
+    font-size: 14px;
+}
+
+table {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+table,
+tr,
+td {
+    border-collapse: collapse;
+    line-height: 1.5;
+}
+
+td {
+    border-bottom: 1px solid #dddddd;
+}
+
+.main-content {
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.personalInfo {
+    background-color: #afbadc;
+    font-weight: bold;
+    text-align: center;
+    border-left: 1px solid #afbadc;
+    border-right: 1px solid #afbadc;
+}
+
+.personalInfo td {
+    padding: 16px;
+    font-size: 18px;
+}
+
+.info-head {
+    background-color: #d4d3d3;
+    font-weight: bold;
+    width: 30%;
+    padding: 8px;
+    border: 1px solid none;
+    color: #212529;
+}
+
+.info {
+    background-color: #f2dede;
+    width: 60%;
+    padding: 8px;
+    border: 1px solid none;
+    color: #212529;
+}
+
+td.my-img {
+    padding: 8px;
+    background-color: #d4d3d3;
+}
+
+.my-img {
+    border: 2px solid #afbadc;
+    border-radius: 2px;
+}

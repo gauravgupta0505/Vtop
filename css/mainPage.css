@@ -1,0 +1,227 @@
+/*
+mainPage.css
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-size: 14px;
+    font-family: 'Open sans', 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    background-color: #ecf0f1;
+}
+
+h1 {
+    color: white;
+}
+
+.nav-bar-top {
+    width: 100vw;
+    height: 60px;
+    background: linear-gradient(90deg, #2455a3, #2f85cc, #2874a6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    z-index: 3;
+}
+
+.nav-bar-top-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* position: fixed; */
+    /* padding: 5px; */
+    /* margin: 0 auto; */
+}
+
+.nav-bar-top-flex .right,
+.nav-bar-top-flex .left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    /* padding: 5px;
+padding-top: 8px;
+padding-bottom: 2px; */
+    margin: 2px;
+}
+
+.nav-bar-top-flex .left img {
+    width: 45px;
+    padding-right: 10px;
+}
+
+.nav-bar-top-flex .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50%;
+    align-items: center;
+}
+
+.nav-bar-top-flex .right {
+    justify-content: flex-end;
+}
+
+.nav-text {
+    color: white;
+    margin: auto 0;
+    /* margin-left: 9px;
+margin-right: 9px;
+padding-top: 8px;
+padding-bottom: 8px; */
+    font-family: 'Times';
+    font-size: 2rem;
+}
+
+.nav-text-right {
+    color: white;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9px;
+    margin-right: 9px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+
+a {
+    margin: 2px;
+    padding-top: 5px;
+    padding-left: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a img {
+    padding-left: 10px;
+}
+
+.nav-bar-left {
+    top: 60px;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    width: 30px;
+    position: fixed;
+    z-index: 2;
+}
+
+.nav-bar-left-flex {
+    height: 90vh;
+    width: 30px;
+    padding: 6px;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    z-index: 2;
+}
+
+.nav-bar-left-flex ul li {
+    display: inline-flex;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+ul li:hover {
+    background-color: #9acdf0b6;
+}
+
+.nav-bar-left-flex ul li img {
+    padding-left: 0;
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+}
+
+
+/*Spotlight*/
+
+.spotlight {
+    margin-top: 65px;
+    margin-left: 55px;
+    background-color: #ecf0f1;
+    padding: 5px;
+    overflow: auto;
+    width: 93vw;
+}
+
+
+/* .spotlight-content {
+    padding: 5px;
+} */
+
+.spotlight-head {
+    background-color: #f7f7f7;
+    padding: 15px;
+    padding-bottom: 3.75px;
+}
+
+.spotlight-head h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #282c30;
+}
+
+.spotlight-body {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.btnspotlight {
+    background-color: #0dcaf0;
+    font-size: 12px;
+    /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+    font-weight: bold;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.spotlight ul li {
+    /* position: relative; */
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.spotlight ul li:hover {
+    cursor: pointer;
+}
+
+.spotlight ul li::before {
+    content: '\26A1';
+    margin-left: 20px;
+    margin-right: 10px;
+    /* fill: #900c3f; */
+}
+
+.hover-info {
+    display: none;
+    width: fit-content;
+    white-space: nowrap;
+    position: absolute;
+    margin-left: 40px;
+    padding: 2px;
+    border: 1px solid #212529;
+    background-color: #e6eaeb;
+    font-weight: bold;
+}
+
+li:hover .hover-info {
+    display: block;
+    cursor: pointer;
+}

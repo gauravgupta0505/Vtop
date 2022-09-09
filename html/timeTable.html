@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vtop Timetable</title>
+
+    <link rel="stylesheet" href="../css/timeTable.css">
+    <link rel="stylesheet" href="../css/mainPage.css">
+</head>
+
+<body>
+    <div class="nav-bar-top">
+        <div class="nav-bar-top-flex">
+            <div class="left">
+                <img src="../images/hamburger-menu.svg" alt="menu" style="margin-left: 10px;">
+                <img src="../images/VITLogoEmblem_nav.png" alt="vit_emblem" style="height: 45px;">
+                <h1>
+                    VIT
+                    <span style="font-size:15px; font-family: 'Open sans',Georgia, 'Times New Roman', Times, serif; font-weight: 200; padding-bottom: 10px;">(Vellore
+                        Campus)</span>
+                </h1>
+                <a href="../html/mainPage.html" target="_self" rel="noopener noreferrer">
+                    <img src="../images/home_nav.svg" alt="home-image" style="height: 40px; width: 30px; margin-left: 10px; padding-left: 0;">
+                </a>
+            </div>
+            <div class="right" style="margin-right: 14px;">
+                <img src="../images/myImg.jpeg" alt="my-image" style="height: 45px; width: 45px; border: 1px solid black; border-radius: 90%; margin: 2.5px">
+                <p class="nav-text-right">20BCB0087 (STUDENT)</p>
+            </div>
+        </div>
+    </div>
+    <div class="nav-bar-left">
+        <div class="nav-bar-left-flex" style="width: 43px;">
+            <ul style="align-content: space-between;">
+                <li>
+                    <a href="../html/personalInfo.html" target="_self" rel="noopener noreferrer"><img src="../images/profile-nav-left.svg" alt="personal-info"></a>
+                    <div class="hover-info">Personal Details</div>
+                </li>
+
+                <li>
+                    <a href="../html/proctorDetails.html" target="_self" rel="noopener noreferrer"><img src="../images/proctor-nav-left.svg" alt="proctor-info"></a>
+                    <div class="hover-info">Proctor Details</div>
+                </li>
+                <li>
+                    <a href="../html/timeTable.html" target="_self" rel="noopener noreferrer"><img src="../images/ttable-nav-left.svg" alt="time-table"></a>
+                    <div class="hover-info">Time Table</div>
+                </li>
+                <li>
+                    <a href="../html/gradeHistory.html" target="_self" rel="noopener noreferrer"><img src="../images/grade-nav-left.svg" alt="grade-history"></a>
+                    <div class="hover-info">Grade History</div>
+                </li>
+                <li>
+                    <a href="../html/changePass.html" target="_self" rel="noopener noreferrer"><img src="../images/pass-nav-left.svg" alt="change-password"></a>
+                    <div class="hover-info">Change Password</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content-border">
+        <div class="main-content">
+            <div class="header-content">
+                <h3 style=" color:#454545; font-size: 32px; font-weight: 400; margin-block-start: 0.61em; margin-block-end: 0.61em; margin-top: 0;">Time Table</h3>
+                <hr style="border:0px; border-bottom:1px solid #ebdbdb; width: 100%;">
+            </div>
+            <div class="body-content">
+
+                <form action="">
+                    <span style="font-size: 18px; font-weight: bold;">Semester</span>
+                    <br>
+                    <span style="color: red; font-size: 18px; font-weight: bold; margin-right: 5px;">* Only Registered Semester</span>
+                    <select name="form-semester-select" id="" style="width: 60%; font-size: medium; padding: 2px;">
+                    <option value selected="selected">--Choose Semester--</option>
+                    <option value="VL20222301">Fall Semester 2022-23</option>
+                    <option value="VL20212205">Winter Semester 2021-22</option><option value="VL20212201">Fall Semester 2021-22</option>
+                </select>
+                </form>
+                <div class="note">
+                    <span>Note:</span>
+                    <br>
+                    <ul>
+                        <li>
+                            Students are required to generate the invoice and then proceed to pay the required course fee. Registration is confirmed only if status of the course is <span style="color: green;">'Registered and Approved'</span> (in regular
+                            cases) or <span style="color: green;">'Registered, Invoice Generated, Fees Paid and Approved'</span> (when there is a requirement for course fee payment).
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="course-information-div">
+                    <table class="table course-information">
+                        <thead>
+                            <th style="width: 1%;">Sl.No</th>
+                            <th style="width: 5%;">Class Group</th>
+                            <th style="width: 20%;">Course</th>
+                            <th style="width: 0.3%;">L T P J C </th>
+                            <th style="width: 5%;">
+                                <p>Program Core</p>
+                            </th>
+                            <th style="width: 5%;">Course Option </th>
+                            <th style="width: 5%;">Class Nbr </th>
+                            <th style="width: 10%;">Slot - Venue</th>
+                            <th style="width: 10%;">Faculty Details</th>
+                            <th style="width: 15%;">Registered / Updated Date & Time</th>
+                            <th style="width: 10%;">
+                                <p>Attendance Date -</p>
+                                <p>Type</p>
+                            </th>
+                            <th style="width: 10%;">Status & Ref No</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>1</p>
+                                </td>
+                                <td>
+                                    <p>General (Semester)</p>
+                                </td>
+                                <td>
+                                    <p>BIT2003 - Genomics and Proteomics</p>
+                                    <p>( Embedded Theory )</p>
+                                </td>
+                                <td>
+                                    <p>3 0 0 0 3.0</p>
+                                </td>
+                                <td>
+                                    <p>Specialization Elective
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>Regular</p>
+                                </td>
+                                <td>
+                                    <p>VL2022230101826</p>
+                                </td>
+                                <td>
+                                    <p>C2+TC2 -
+
+                                    </p>
+                                    <p>SMV121</p>
+                                </td>
+                                <td>
+                                    <p>MOHANA PRIYA A -</p>
+                                    <p>SBST</p>
+                                </td>
+                                <td>
+                                    <p>09-Jul-2022 15:13</p>
+                                </td>
+                                <td>
+                                    <p>10-Jul-2022</p>
+                                    <p>- Manual</p>
+                                </td>
+                                <td>
+                                    <p>Registered and Approved</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>General (Semester)</td>
+                                <td>
+                                    <p>BIT2003 - Genomics and Proteomics</p>
+                                    <p>(Embedded Lab)</p>
+                                </td>
+                                <td>
+                                    <p> 0 0 0 4 1.0</p>
+                                </td>
+                                <td>
+                                    <p>Specialization Elective
+                                    </p>
+                                </td>
+                                <td>Regular</td>
+                                <td>
+                                    <p>VL2022230101827</p>
+                                </td>
+                                <td>
+                                    <p>C2+TC2 -
+
+                                    </p>
+                                    <p>NIL</p>
+                                </td>
+                                <td>
+                                    <p>MOHANA PRIYA A -</p>
+                                    <p>SBST</p>
+                                </td>
+                                <td>
+                                    <p>09-Jul-2022 15:13</p>
+                                </td>
+                                <td>
+                                    <p>10-Jul-2022</p>
+                                    <p>- Manual</p>
+                                </td>
+                                <td>
+                                    <p>Registered and Approved</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>General (Semester)</td>
+                                <td>
+                                    <p>BIT3001 - Computational Biology</p>
+                                    <p>( Embedded Theory )</p>
+                                </td>
+                                <td>3 0 0 0 3.0
+
+                                </td>
+                                <td>
+                                    <p>Specialization Elective</p>
+                                </td>
+                                <td>Regular</td>
+                                <td>
+                                    <p>VL2022230101828</p>
+                                </td>
+                                <td>
+                                    <p>E2+TE2 -</p>
+                                    <p>SMV218</p>
+                                </td>
+                                <td>
+                                    <p>JAYANTHI S -</p>
+                                    <p>SBST</p>
+                                </td>
+                                <td>
+                                    <p>09-Jul-2022 15:13</p>
+                                </td>
+                                <td>
+                                    <p>10-Jul-2022</p>
+                                    <p>- Manual</p>
+                                </td>
+                                <td>
+                                    <p>Registered and Approved</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>General (Semester)</td>
+                                <td>
+                                    <p>BIT3001 - Computational Biology</p>
+                                    <p>( Embedded Project )</p>
+                                </td>
+                                <td>
+                                    <p>0 0 0 4 4.0
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>Specialization Elective</p>
+                                </td>
+                                <td>Regular</td>
+                                <td>VL2022230101829</td>
+                                <td>
+                                    <p>E2+TE2 -</p>
+                                    <p>NIL</p>
+                                </td>
+                                <td>
+                                    <p>JAYANTHI S -</p>
+                                    <p>SBST</p>
+                                </td>
+                                <td>
+                                    <p>09-Jul-2022 15:13</p>
+                                </td>
+                                <td>
+                                    <p>10-Jul-2022</p>
+                                    <p>- Manual</p>
+                                </td>
+                                <td>
+                                    <p>Registered and Approved</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>General (Semester)</td>
+                                <td>
+                                    <p>CSE2006 - Microprocessor and Interfacing</p>
+                                    <p>( Embedded Theory )</p>
+                                </td>
+                                <td>
+                                    <p>2 0 0 0 2.0 </p>
+                                </td>
+                                <td>
+                                    <p>Program Core</p>
+                                </td>
+                                <td>Regular</td>
+                                <td>
+                                    <p>VL2022230103870</p>
+                                </td>
+                                <td>
+                                    <p>D1 - </p>
+                                    <p>SJT514</p>
+                                </td>
+                                <td>
+                                    <p>NARESH K -</p>
+                                    <p>SCOPE</p>
+                                </td>
+                                <td>
+                                    <p>09-Jul-2022 15:13</p>
+                                </td>
+                                <td>
+                                    <p>10-Jul-2022</p>
+                                    <p>- Manual</p>
+                                </td>
+                                <td>
+                                    <p>Registered and Approved</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>General (Semester)</td>
+                                <td>
+                                    <p>CSE2006 - Microprocessor and Interfacing</p>
+                                    <p>( Embedded Lab )</p>
+                                </td>
+                                <td>
+                                    <p>0 0 2 0 1.0
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>Program Core</p>
+                                </td>
+                                <td>Regular</td>
+                                <td>
+                                    <p>VL2022230103908</p>
+                                </td>
+                                <td>
+                                    <p>L13+L14 - </p>
+                                    <p>SJT515</p>
+                                </td>
+                                <td>
+                                    <p>NARESH K -</p>
+                                    <p>SCOPE</p>
+                                </td>
+                                <td>
+                                    <p>09-Jul-2022 15:13</p>
+                                </td>
+                                <td>
+                                    <p>10-Jul-2022</p>
+                                    <p>- Manual</p>
+                                </td>
+                                <td>
+                                    <p>Registered and Approved</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>General (Semester)</td>
+                                <td>
+                                    <p>CSE2006 - Microprocessor and Interfacing</p>
+                                    <p>( Embedded Project )</p>
+                                </td>
+                                <td>
+                                    <p>0 0 0 4 1.0
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>Program Core</p>
+                                </td>
+                                <td>Regular</td>
+                                <td>
+                                    <p>VL2022230103909</p>
+                                </td>
+                                <td>
+                                    <p>L13+L14 - </p>
+                                    <p>NIL</p>
+                                </td>
+                                <td>
+                                    <p>NARESH K -</p>
+                                    <p>SCOPE</p>
+                                </td>
+                                <td>
+                                    <p>09-Jul-2022 15:13</p>
+                                </td>
+                                <td>
+                                    <p>10-Jul-2022</p>
+                                    <p>- Manual</p>
+                                </td>
+                                <td>
+                                    <p>Registered and Approved</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>General (Semester)</td>
+                                <td>
+                                    <p>CSE3002 - Internet and Web Programming</p>
+                                    <p>( Embedded Theory )</p>
+                                </td>
+                                <td>
+                                    <p>2 0 0 0 2.0
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>Program Core</p>
+                                </td>
+                                <td>Regular</td>
+                                <td>
+                                    <p>VL2022230103897</p>
+                                </td>
+                                <td>
+                                    <p>B1 - </p>
+                                    <p>SJT208</p>
+                                </td>
+                                <td>
+                                    <p>JAYAKUMAR S -</p>
+                                    <p>SCOPE</p>
+                                </td>
+                                <td>
+                                    <p>09-Jul-2022 15:13</p>
+                                </td>
+                                <td>
+                                    <p>10-Jul-2022</p>
+                                    <p>- Manual</p>
+                                </td>
+                                <td>
+                                    <p>Registered and Approved</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>General (Semester)</td>
+                                <td>
+                                    <p>CSE3002 - Internet and Web Programming</p>
+                                    <p>( Embedded Lab )</p>
+                                </td>
+                                <td>
+                                    <p>0 0 2 0 1.0
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>Program Core</p>
+                                </td>
+                                <td>Regular</td>
+                                <td>
+                                    <p>VL2022230103976</p>
+                                </td>
+                                <td>
+                                    <p>L35+L36 - </p>
+                                    <p>SJT416</p>
+                                </td>
+                                <td>
+                                    <p>JAYAKUMAR S -</p>
+                                    <p>SCOPE</p>
+                                </td>
+                                <td>
+                                    <p>09-Jul-2022 15:13</p>
+                                </td>
+                                <td>
+                                    <p>10-Jul-2022</p>
+                                    <p>- Manual</p>
+                                </td>
+                                <td>
+                                    <p>Registered and Approved</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>General (Semester)</td>
+                                <td>
+                                    <p>CSE3002 - Internet and Web Programming</p>
+                                    <p>( Embedded Project )</p>
+                                </td>
+                                <td>
+                                    <p>0 0 0 4 1.0</p>
+                                </td>
+                                <td>
+                                    <p>Program Core</p>
+                                </td>
+                                <td>Regular</td>
+                                <td>
+                                    <p>VL2022230103977</p>
+                                </td>
+                                <td>
+                                    <p>L35+L36 - </p>
+                                    <p>NIL</p>
+                                </td>
+                                <td>
+                                    <p>JAYAKUMAR S -</p>
+                                    <p>SCOPE</p>
+                                </td>
+                                <td>
+                                    <p>09-Jul-2022 15:13</p>
+                                </td>
+                                <td>
+                                    <p>10-Jul-2022</p>
+                                    <p>- Manual</p>
+                                </td>
+                                <td>
+                                    <p>Registered and Approved</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>General (Semester)</td>
+                                <td>
+                                    <p>CSE3501 - Information Security Analysis and Audit</p>
+                                    <p>( Embedded Theory )</p>
+                                </td>
+                                <td>
+                                    <p>2 0 0 0 2.0
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>Program Elective</p>
+                                </td>
+                                <td>Regular</td>
+                                <td>
+                                    <p>VL2022230103303</p>
+                                </td>
+                                <td>
+                                    <p>F2 - </p>
+                                    <p>SJT311A</p>
+                                </td>
+                                <td>
+                                    <p>KUMARESAN A -</p>
+                                    <p>SCOPE</p>
+                                </td>
+                                <td>
+                                    <p>09-Jul-2022 15:13</p>
+                                </td>
+                                <td>
+                                    <p>10-Jul-2022</p>
+                                    <p>- Manual</p>
+                                </td>
+                                <td>
+                                    <p>Registered and Approved</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>General (Semester)</td>
+                                <td>
+                                    <p>CSE3501 - Information Security Analysis and Audit</p>
+                                    <p>( Embedded Lab )</p>
+                                </td>
+                                <td>
+                                    <p>0 0 2 0 1.0
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>Program Elective</p>
+                                </td>
+                                <td>Regular</td>
+                                <td>
+                                    <p>VL2022230103637</p>
+                                </td>
+                                <td>
+                                    <p>L9+L10 - </p>
+                                    <p>SJT318</p>
+                                </td>
+                                <td>
+                                    <p>KUMARESAN A -</p>
+                                    <p>SCOPE</p>
+                                </td>
+                                <td>
+                                    <p>09-Jul-2022 15:13</p>
+                                </td>
+                                <td>
+                                    <p>10-Jul-2022</p>
+                                    <p>- Manual</p>
+                                </td>
+                                <td>
+                                    <p>Registered and Approved</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>General (Semester)</td>
+                                <td>
+                                    <p>CSE3501 - Information Security Analysis and Audit</p>
+                                    <p>( Embedded Lab )</p>
+                                </td>
+                                <td>
+                                    <p>0 0 0 4 1.0
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>Program Elective</p>
+                                </td>
+                                <td>Regular</td>
+                                <td>
+                                    <p>VL2022230103638</p>
+                                </td>
+                                <td>
+                                    <p>L9+L10 - </p>
+                                    <p>NIL</p>
+                                </td>
+                                <td>
+                                    <p>KUMARESAN A -</p>
+                                    <p>SCOPE</p>
+                                </td>
+                                <td>
+                                    <p>09-Jul-2022 15:13</p>
+                                </td>
+                                <td>
+                                    <p>10-Jul-2022</p>
+                                    <p>- Manual</p>
+                                </td>
+                                <td>
+                                    <p>Registered and Approved</p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>General (Semester)</td>
+                                <td>
+                                    <p>STS3201 - Programming Skills for Employment</p>
+                                    <p>( Soft Skill )</p>
+                                </td>
+                                <td>
+                                    <p>3 0 0 0 1.0
+
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>University Core (GENERAL Basket)</p>
+                                </td>
+                                <td>Regular</td>
+                                <td>
+                                    <p>VL2022230100038</p>
+                                </td>
+                                <td>
+                                    <p>D2+TD2 -</p>
+                                    <p>SJT711</p>
+                                </td>
+                                <td>
+                                    <p>SMART (APT) -</p>
+                                    <p>SSL</p>
+                                </td>
+                                <td>
+                                    <p>09-Jul-2022 15:13</p>
+                                </td>
+                                <td>
+                                    <p>10-Jul-2022</p>
+                                    <p>- Manual</p>
+                                </td>
+                                <td>
+                                    <p>Registered and Approved</p>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td style="text-align:center;" colspan="16">Total Credits: 21.0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <br><br>
+                    <table class="time-table">
+                        <tbody>
+                            <tr>
+                                <td rowspan="2" class="title-head">THEORY</td>
+                                <td class="title-head">Start</td>
+                                <td class="time1">08:00</td>
+                                <td class="time1">09:00</td>
+                                <td class="time1">10:00</td>
+                                <td class="time1">11:00</td>
+                                <td class="time1">12:00</td>
+                                <td class="time1">-</td>
+
+                                <td class="lunch">Lunch</td>
+                                <td class="time1">14:00</td>
+                                <td class="time1">15:00</td>
+                                <td class="time1">16:00</td>
+                                <td class="time1">17:00</td>
+                                <td class="time1">18:00</td>
+                                <td class="time1">18:51</td>
+                                <td class="time1">19:01</td>
+
+                            </tr>
+                            <tr>
+                                <td class="title-head">End</td>
+                                <td class="time1">08:50</td>
+                                <td class="time1">09:50</td>
+                                <td class="time1">10:50</td>
+                                <td class="time1">11:50</td>
+                                <td class="time1">12:50</td>
+                                <td class="time1">-</td>
+
+                                <td class="lunch">Lunch</td>
+                                <td class="time1">14:50</td>
+                                <td class="time1">15:50</td>
+                                <td class="time1">16:50</td>
+                                <td class="time1">17:50</td>
+                                <td class="time1">18:50</td>
+                                <td class="time1">19:01</td>
+                                <td class="time1">19:50</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" class="title-head">LAB</td>
+                                <td class="title-head">Start</td>
+                                <td class="time2">08:00</td>
+                                <td class="time2">08:51</td>
+                                <td class="time2">09:51</td>
+                                <td class="time2">10:41</td>
+                                <td class="time2">11:40</td>
+                                <td class="time2">12:31</td>
+
+                                <td class="lunch">Lunch</td>
+                                <td class="time2">14:00</td>
+                                <td class="time2">14:51</td>
+                                <td class="time2">15:51</td>
+                                <td class="time2">16:41</td>
+                                <td class="time2">17:40</td>
+                                <td class="time2">18:31</td>
+                                <td class="time2">-</td>
+
+                            </tr>
+                            <tr>
+                                <td class="title-head">End</td>
+                                <td class="time2">08:50</td>
+                                <td class="time2">09:40</td>
+                                <td class="time2">10:40</td>
+                                <td class="time2">11:30</td>
+                                <td class="time2">12:20</td>
+                                <td class="time2">13:20</td>
+
+                                <td class="lunch">Lunch</td>
+                                <td class="time2">14:50</td>
+                                <td class="time2">15:40</td>
+                                <td class="time2">16:40</td>
+                                <td class="time2">17:30</td>
+                                <td class="time2">18:30</td>
+                                <td class="time2">19:20</td>
+                                <td class="time2">-</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" class="title-head">MON</td>
+                                <td class="title-head">THEORY</td>
+                                <td class="theory-empty">A1</td>
+                                <td class="theory-empty">F1</td>
+                                <td class="filled">D1-CSE2006-ETH-SJT514-ALL</td>
+                                <td class="theory-empty">TB1</td>
+                                <td class="theory-empty">TG1</td>
+                                <td class="theory-empty">-</td>
+                                <td class="title-head">Lunch</td>
+                                <td class="theory-empty">A2</td>
+                                <td class="filled">F2-CSE3501-ETH-SJT311A-ALL</td>
+                                <td class="theory-empty">D2-STS3201-SS-SJT711-ALL</td>
+                                <td class="theory-empty">TB2</td>
+                                <td class="theory-empty">TG2</td>
+                                <td class="theory-empty">-</td>
+                                <td class="theory-empty">V3</td>
+                            </tr>
+                            <tr>
+                                <td class="title-head">LAB</td>
+                                <td class="lab-empty">L1</td>
+                                <td class="lab-empty">L2</td>
+                                <td class="lab-empty">L3</td>
+                                <td class="lab-empty">L4</td>
+                                <td class="lab-empty">L5</td>
+                                <td class="lab-empty">L6</td>
+                                <td class="title-head">Lunch</td>
+                                <td class="lab-empty">L31</td>
+                                <td class="lab-empty">L32</td>
+                                <td class="lab-empty">L33</td>
+                                <td class="lab-empty">L34</td>
+                                <td class="filled">L35-CSE3002-ELA-SJT416-ALL</td>
+                                <td class="filled">L36-CSE3002-ELA-SJT416-ALL</td>
+                                <td class="lab-empty">-</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" class="title-head">TUE</td>
+                                <td class="title-head">THEORY</td>
+                                <td class="filled">B1-CSE3002-ETH-SJT208-ALL</td>
+                                <td class="theory-empty">G1</td>
+                                <td class="theory-empty">E1</td>
+                                <td class="theory-empty">TC1</td>
+                                <td class="theory-empty">TSS1</td>
+                                <td class="theory-empty">-</td>
+                                <td class="title-head">Lunch</td>
+                                <td class="theory-empty">B2</td>
+                                <td class="theory-empty">G2</td>
+                                <td class="filled">E2-BIT3001-ETH-SMV218-ALL</td>
+                                <td class="filled">C2-BIT2003-ETH-SMV121-ALL</td>
+                                <td class="theory-empty">TAA2</td>
+                                <td class="theory-empty">-</td>
+                                <td class="theory-empty">V4</td>
+                            </tr>
+                            <tr>
+                                <td class="title-head">LAB</td>
+                                <td class="lab-empty">L7</td>
+                                <td class="lab-empty">L8</td>
+                                <td class="filled">L9-CSE3501-ELA-SJT318-ALL</td>
+                                <td class="filled">L10-CSE3501-ELA-SJT318-ALL</td>
+                                <td class="lab-empty">L11</td>
+                                <td class="lab-empty">l12</td>
+                                <td class="title-head">Lunch</td>
+                                <td class="lab-empty">L37</td>
+                                <td class="lab-empty">L38</td>
+                                <td class="lab-empty">L39</td>
+                                <td class="lab-empty">L40</td>
+                                <td class="lab-empty">L41</td>
+                                <td class="lab-empty">L42</td>
+                                <td class="lab-empty">-</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" class="title-head">WED</td>
+                                <td class="title-head">THEORY</td>
+                                <td class="theory-empty">C1</td>
+                                <td class="theory-empty">A1</td>
+                                <td class="theory-empty">F1</td>
+                                <td class="theory-empty">V1</td>
+                                <td class="theory-empty">V2</td>
+                                <td class="theory-empty">-</td>
+                                <td class="title-head">Lunch</td>
+                                <td class="filled">C2-BIT2003-ETH-SMV121-ALL</td>
+                                <td class="theory-empty">A2</td>
+                                <td class="filled">F2-CSE3501-ETH-SJT311A-ALL</td>
+                                <td class="filled">D1-CSE2006-ETH-SJT514-ALL</td>
+                                <td class="theory-empty">TBB2</td>
+                                <td class="theory-empty">-</td>
+                                <td class="theory-empty">V5</td>
+                            </tr>
+                            <tr>
+                                <td class="title-head">LAB</td>
+                                <td class="filled">L13-CSE2006-ELA-SJT515-ALL</td>
+                                <td class="filled">L14-CSE2006-ELA-SJT515-ALL</td>
+                                <td class="lab-empty">L15</td>
+                                <td class="lab-empty">L16</td>
+                                <td class="lab-empty">L17</td>
+                                <td class="lab-empty">L18</td>
+                                <td class="title-head">Lunch</td>
+                                <td class="lab-empty">L43</td>
+                                <td class="lab-empty">L44</td>
+                                <td class="lab-empty">L45</td>
+                                <td class="lab-empty">L46</td>
+                                <td class="lab-empty">L47</td>
+                                <td class="lab-empty">L48</td>
+                                <td class="lab-empty">-</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" class="title-head">THUR</td>
+                                <td class="title-head">THEORY</td>
+                                <td class="filled">D1-CSE2006-ETH-SJT514-ALL</td>
+                                <td class="filled">B1-CSE3002-ETH-SJT208-ALL</td>
+                                <td class="theory-empty">G1</td>
+                                <td class="theory-empty">TE1</td>
+                                <td class="theory-empty">TCC1</td>
+                                <td class="theory-empty">-</td>
+                                <td class="title-head">Lunch</td>
+                                <td class="theory-empty">D2-STS3201-SS-SJT711-ALL</td>
+                                <td class="theory-empty">B2</td>
+                                <td class="theory-empty">G2</td>
+                                <td class="theory-empty">E2-BIT3001-ETH-SMV218-ALL</td>
+                                <td class="theory-empty">TCC2</td>
+                                <td class="theory-empty">-</td>
+                                <td class="theory-empty">V6</td>
+                            </tr>
+                            <tr>
+                                <td class="title-head">LAB</td>
+                                <td class="lab-empty">L19</td>
+                                <td class="lab-empty">L20</td>
+                                <td class="lab-empty">L21</td>
+                                <td class="lab-empty">L22</td>
+                                <td class="lab-empty">L23</td>
+                                <td class="lab-empty">L24</td>
+                                <td class="title-head">Lunch</td>
+                                <td class="lab-empty">L49</td>
+                                <td class="lab-empty">L50</td>
+                                <td class="lab-empty">L51</td>
+                                <td class="lab-empty">L52</td>
+                                <td class="lab-empty">L53</td>
+                                <td class="lab-empty">L54</td>
+                                <td class="lab-empty">-</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" class="title-head">FRI</td>
+                                <td class="title-head">THEORY</td>
+                                <td class="theory-empty">E1</td>
+                                <td class="theory-empty">C1</td>
+                                <td class="theory-empty">TA1</td>
+                                <td class="theory-empty">TF1</td>
+                                <td class="theory-empty">TD1</td>
+                                <td class="theory-empty">-</td>
+                                <td class="title-head">Lunch</td>
+                                <td class="filled">TE2-BIT3001-ETH-SMV218-ALL</td>
+                                <td class="filled">TC2-BIT2003-ETH-SMV121-ALL</td>
+                                <td class="theory-empty">TA2</td>
+                                <td class="theory-empty">TF2</td>
+                                <td class="theory-empty">TDD2</td>
+                                <td class="theory-empty">-</td>
+                                <td class="theory-empty">V7</td>
+                            </tr>
+                            <tr>
+                                <td class="title-head">LAB</td>
+                                <td class="lab-empty">L25</td>
+                                <td class="lab-empty">L26</td>
+                                <td class="lab-empty">L27</td>
+                                <td class="lab-empty">L28</td>
+                                <td class="lab-empty">L29</td>
+                                <td class="lab-empty">L30</td>
+                                <td class="title-head">Lunch</td>
+                                <td class="lab-empty">L55</td>
+                                <td class="lab-empty">L56</td>
+                                <td class="lab-empty">L57</td>
+                                <td class="lab-empty">L58</td>
+                                <td class="lab-empty">L59</td>
+                                <td class="lab-empty">L60</td>
+                                <td class="lab-empty">-</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" class="title-head">SAT</td>
+                                <td class="title-head">THEORY</td>
+                                <td class="theory-empty">V8</td>
+                                <td class="theory-empty">X11</td>
+                                <td class="theory-empty">X12</td>
+                                <td class="theory-empty">Y11</td>
+                                <td class="theory-empty">Y12</td>
+                                <td class="theory-empty">-</td>
+                                <td class="title-head">Lunch</td>
+                                <td class="theory-empty">X21</td>
+                                <td class="theory-empty">Z21</td>
+                                <td class="theory-empty">Y21</td>
+                                <td class="theory-empty">W21</td>
+                                <td class="theory-empty">W22</td>
+                                <td class="theory-empty">-</td>
+                                <td class="theory-empty">V9</td>
+                            </tr>
+                            <tr>
+                                <td class="title-head">LAB</td>
+                                <td class="lab-empty">L71</td>
+                                <td class="lab-empty">L72</td>
+                                <td class="lab-empty">L73</td>
+                                <td class="lab-empty">L74</td>
+                                <td class="lab-empty">L75</td>
+                                <td class="lab-empty">L76</td>
+                                <td class="title-head">Lunch</td>
+                                <td class="lab-empty">L77</td>
+                                <td class="lab-empty">L78</td>
+                                <td class="lab-empty">L79</td>
+                                <td class="lab-empty">L80</td>
+                                <td class="lab-empty">L81</td>
+                                <td class="lab-empty">L82</td>
+                                <td class="lab-empty">-</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" class="title-head">SUN</td>
+                                <td class="title-head">THEORY</td>
+                                <td class="theory-empty">V10</td>
+                                <td class="theory-empty">Y11</td>
+                                <td class="theory-empty">Y12</td>
+                                <td class="theory-empty">X11</td>
+                                <td class="theory-empty">X12</td>
+                                <td class="theory-empty">-</td>
+                                <td class="title-head">Lunch</td>
+                                <td class="theory-empty">Y21</td>
+                                <td class="theory-empty">Z21</td>
+                                <td class="theory-empty">X21</td>
+                                <td class="theory-empty">W21</td>
+                                <td class="theory-empty">W22</td>
+                                <td class="theory-empty">-</td>
+                                <td class="theory-empty">V11</td>
+                            </tr>
+                            <tr>
+                                <td class="title-head">LAB</td>
+                                <td class="lab-empty">L83</td>
+                                <td class="lab-empty">L84</td>
+                                <td class="lab-empty">L85</td>
+                                <td class="lab-empty">L86</td>
+                                <td class="lab-empty">L87</td>
+                                <td class="lab-empty">L88</td>
+                                <td class="title-head">Lunch</td>
+                                <td class="lab-empty">L89</td>
+                                <td class="lab-empty">L90</td>
+                                <td class="lab-empty">L91</td>
+                                <td class="lab-empty">L92</td>
+                                <td class="lab-empty">L93</td>
+                                <td class="lab-empty">94</td>
+                                <td class="lab-empty">-</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

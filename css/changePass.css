@@ -1,0 +1,75 @@
+html,
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    background-color: #d6d9da;
+}
+
+table,
+th,
+td {
+    font-size: 16px;
+    width: 97%;
+    background-color: #fff;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    /* text-align: center; */
+    padding: 5px;
+    line-height: 1.5;
+}
+
+tbody tr td:first-child {
+    width: 40%;
+}
+
+tbody tr td:last-child {
+    width: 60%;
+}
+
+thead th {
+    background-color: #3c8dbc;
+}
+
+.fixed-table {
+    overflow: auto;
+    margin: 0 auto;
+    width: 97%;
+}
+
+.main-content-border {
+    background-color: #fff;
+    border-top: 7px solid #00b5e2;
+    /* border-bottom: 7px solid #00b5e2; */
+    border-radius: 5px;
+    margin-top: 62px;
+    margin-left: 50px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.chng-pass-btn {
+    text-align: center;
+}
+
+.pass-inp {
+    padding: 6px 12px;
+    width: 94%;
+}
+
+.note {
+    margin-top: 20px;
+}
+
+button {
+    color: white;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    background-repeat: repeat-x;
+    border-color: #245580;
+    border-radius: 6px;
+    background-image: linear-gradient(to bottom, #337ab7 0%, #265a88 100%);
+    width: 6.06rem;
+    font-size: 18px;
+}

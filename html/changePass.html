@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password</title>
+
+    <link rel="stylesheet" href="../css/changePass.css">
+    <link rel="stylesheet" href="../css/mainPage.css">
+</head>
+
+<body>
+    <div class="nav-bar-top">
+        <div class="nav-bar-top-flex">
+            <div class="left">
+                <img src="../images/hamburger-menu.svg" alt="menu" style="margin-left: 10px;">
+                <img src="../images/VITLogoEmblem_nav.png" alt="vit_emblem" style="height: 45px;">
+                <h1>
+                    VIT
+                    <span style="font-size:15px; font-family: 'Open sans',Georgia, 'Times New Roman', Times, serif; font-weight: 200; padding-bottom: 10px;">(Vellore
+                        Campus)</span>
+                </h1>
+                <a href="../html/mainPage.html" target="_self" rel="noopener noreferrer">
+                    <img src="../images/home_nav.svg" alt="home-image" style="height: 40px; width: 30px; margin-left: 10px;">
+                </a>
+            </div>
+            <div class="right" style="margin-right: 14px;">
+                <img src="../images/myImg.jpeg" alt="my-image" style="height: 45px; width: 45px; border: 1px solid black; border-radius: 90%; margin: 2.5px">
+                <p class="nav-text-right">20BCB0087 (STUDENT)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-bar-left">
+        <div class="nav-bar-left-flex">
+            <ul style="align-content: space-between;">
+                <li>
+                    <a href="../html/personalInfo.html" target="_self" rel="noopener noreferrer"><img src="../images/profile-nav-left.svg" alt="personal-info"></a>
+                    <div class="hover-info">Personal Details</div>
+                </li>
+
+                <li>
+                    <a href="../html/proctorDetails.html" target="_self" rel="noopener noreferrer"><img src="../images/proctor-nav-left.svg" alt="proctor-info"></a>
+                    <div class="hover-info">Proctor Details</div>
+                </li>
+                <li>
+                    <a href="../html/timeTable.html" target="_self" rel="noopener noreferrer"><img src="../images/ttable-nav-left.svg" alt="time-table"></a>
+                    <div class="hover-info">Time Table</div>
+                </li>
+                <li>
+                    <a href="../html/gradeHistory.html" target="_self" rel="noopener noreferrer"><img src="../images/grade-nav-left.svg" alt="grade-history"></a>
+                    <div class="hover-info">Grade History</div>
+                </li>
+                <li>
+                    <a href="../html/changePass.html" target="_self" rel="noopener noreferrer"><img src="../images/pass-nav-left.svg" alt="change-password"></a>
+                    <div class="hover-info">Change Password</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content-border">
+        <div class="main-content">
+            <div class="fixed-table">
+                <table>
+                    <thead>
+                        <th colspan="2"></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>User</td>
+                            <td>20BCB0087</td>
+                        </tr>
+                        <tr>
+                            <td>Old Password</td>
+                            <td> <input type="password" class="pass-inp" name="old-password" id="old-password"></td>
+                        </tr>
+                        <tr>
+                            <td>New Password</td>
+                            <td><input type="password" class="pass-inp" name="new-password" id="new-password"></td>
+                        </tr>
+                        <tr>
+                            <td>Confirm Password</td>
+                            <td><input type="password" class="pass-inp" name="confirm-password" id="confirm-password"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td> <input type="checkbox" value="Show Password" style="margin-right: 6px;">Show Password</td>
+                        </tr>
+                        <tr class="chng-pass-btn">
+                            <td colspan="2"> <button>Submit</button> </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div class="note">
+                    <b>Note : </b>
+                    <ul>
+                        <li>Password should be more than 8 and less than 30 characters in length</li>
+                        <li>Password should have atleast 1 Upper Case character , 1 Lower case character and 1 Number</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
